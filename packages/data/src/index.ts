@@ -1,3 +1,4 @@
+export * from './app-error.js';
 export * from './auth/google.js';
 export * from './codec.js';
 export * from './constants.js';

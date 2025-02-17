@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {AppError} from '../app-error.js';
 import {DataEffectScheduler, DataTx} from '../data/data-layer.js';
 import {
     CryptoService,
@@ -12,7 +13,6 @@ import {
     VerificationCode,
 } from '../data/repos/identity-repo.js';
 import {createUserId, UserId, UserRepo} from '../data/repos/user-repo.js';
-import {AppError} from '../errors.js';
 import {createApi, handler} from '../transport/rpc.js';
 import {
     AUTH_ACTIVITY_WINDOW_ALLOWED_ACTIONS_COUNT,

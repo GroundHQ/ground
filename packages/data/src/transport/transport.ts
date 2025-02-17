@@ -1,4 +1,4 @@
-import {AppError} from '../errors.js';
+import {AppError} from '../app-error.js';
 import {Observer} from '../subject.js';
 import {Nothing, Unsubscribe} from '../utils.js';
 

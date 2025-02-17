@@ -1,4 +1,4 @@
-import {AppError} from '../errors.js';
+import {AppError} from '../app-error.js';
 
 interface BaseOpLogEntry<TType extends string> {
     readonly type: TType;

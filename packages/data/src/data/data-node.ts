@@ -1,5 +1,5 @@
+import {AppError} from '../app-error.js';
 import {decodeString, encodeString} from '../codec.js';
-import {AppError} from '../errors.js';
 import {decodeHex} from '../hex.js';
 import {decodeIndexKey, encodeIndexKey, IndexKey} from '../kv/data-index.js';
 import {bufStartsWith} from '../utils.js';

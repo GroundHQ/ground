@@ -1,7 +1,7 @@
 import bytewise from 'bytewise';
 import {z} from 'zod';
+import {AppError} from '../app-error.js';
 import {Codec} from '../codec.js';
-import {AppError} from '../errors.js';
 import {assert, compareUint8Array, zip} from '../utils.js';
 import {Uuid, UuidCodec, zUuid} from '../uuid.js';
 import {

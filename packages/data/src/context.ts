@@ -9,6 +9,7 @@ import {customAlphabet} from 'nanoid';
 import {Deferred} from './deferred.js';
 import {CancelledError} from './errors.js';
 import {log, LogLevel} from './logger.js';
+import {toRequestLog} from './transport/rpc-streamer.js';
 import {Brand, Nothing, runAll, Unsubscribe} from './utils.js';
 
 export interface NestedAttributeMap
@@ -318,7 +319,7 @@ export class Context {
                 this.ignoreAddEvent += 1;
                 log.warn(
                     'context is not active, cannot add event: ' +
-                        JSON.stringify({name: message, attributes})
+                        toRequestLog({name: message, attributes})
                 );
             } finally {
                 this.ignoreAddEvent -= 1;

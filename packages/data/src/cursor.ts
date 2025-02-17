@@ -1,4 +1,4 @@
-import {AppError} from './errors.js';
+import {AppError} from './app-error.js';
 import {log} from './logger.js';
 import {Nothing} from './utils.js';
 

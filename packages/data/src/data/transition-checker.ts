@@ -1,4 +1,4 @@
-import {AppError} from '../errors.js';
+import {AppError} from '../app-error.js';
 import {whenAll} from '../utils.js';
 
 export type TransitionChecker<T> = (

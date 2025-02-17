@@ -1,8 +1,8 @@
 import {assert, describe, expect, it} from 'vitest';
+import {AppError} from './app-error.js';
 import {
     AggregateBusinessError,
     AggregateError,
-    AppError,
     BusinessError,
 } from './errors.js';
 import {

@@ -1,8 +1,8 @@
 import {Tracer} from '@opentelemetry/api';
 import {z} from 'zod';
+import {AppError} from '../app-error.js';
 import {Cancel, Context, context, createTraceId} from '../context.js';
 import {
-    AppError,
     CancelledError,
     getErrorCode,
     getReadableError,

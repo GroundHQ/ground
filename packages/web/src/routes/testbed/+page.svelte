@@ -2,12 +2,13 @@
 	import Input from '$lib/components/ui/input/input.svelte';
 	import {getSdk} from '$lib/utils';
 	import {
+		context,
 		Crdt,
 		parseCrdtDiff,
 		stringifyCrdtDiff,
 		type BoardDto,
 	} from 'syncwave-data';
-	import {observeAsync, observe} from '$lib/utils.svelte';
+	import {observe} from '$lib/utils.svelte';
 
 	const {data} = $props();
 	const {boardKey, initialBoard} = data;
@@ -37,6 +38,21 @@
 			);
 		}
 	}
+
+	$effect(() => {
+		console.log('[testbed] outer:', context().traceId);
+		const [ctx, endCtx] = context().createChild({span: 'testbed'}, true);
+		ctx.run(() => {
+			(async () => {
+				console.log('[testbed] before:', context().traceId);
+
+				await new Promise(resolve => setTimeout(resolve, 1));
+
+				console.log('[testbed] after: ', context().traceId);
+			})();
+		});
+		endCtx('end of testbed ctx');
+	});
 </script>
 
 <div class="flex flex-col gap-4">

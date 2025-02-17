@@ -1,5 +1,6 @@
+import {AppError} from '../app-error.js';
 import {RECONNECT_WAIT_MS} from '../constants.js';
-import {AppError, toError} from '../errors.js';
+import {toError} from '../errors.js';
 import {log} from '../logger.js';
 import {Observer, Subject} from '../subject.js';
 import {Unsubscribe, wait} from '../utils.js';

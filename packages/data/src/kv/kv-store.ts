@@ -1,5 +1,5 @@
+import {AppError} from '../app-error.js';
 import {Codec} from '../codec.js';
-import {AppError} from '../errors.js';
 import {Stream, toStream} from '../stream.js';
 import {bufStartsWith, unreachable} from '../utils.js';
 import {MappedTransaction, Mapper} from './mapped-kv-store.js';

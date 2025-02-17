@@ -1,7 +1,7 @@
 import {parse, stringify, v7, validate} from 'uuid';
 import {z} from 'zod';
+import {AppError} from './app-error.js';
 import {Codec} from './codec.js';
-import {AppError} from './errors.js';
 import {Brand} from './utils.js';
 
 export type Uuid = Brand<string, 'uuid'>;

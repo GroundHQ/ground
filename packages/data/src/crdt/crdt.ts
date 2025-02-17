@@ -7,8 +7,8 @@ import {
     Text as YText,
 } from 'yjs';
 import {z} from 'zod';
+import {AppError} from '../app-error.js';
 import {Codec, decodeMsgpack, encodeMsgpack, MsgpackCodec} from '../codec.js';
-import {AppError} from '../errors.js';
 import {decodeHex, encodeHex} from '../hex.js';
 import {getNow, Timestamp} from '../timestamp.js';
 import {

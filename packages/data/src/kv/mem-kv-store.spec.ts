@@ -1,8 +1,9 @@
 import {Channel} from 'async-channel';
 import {beforeEach, describe, expect, it, vi} from 'vitest';
+import {AppError} from '../app-error.js';
 import {MsgpackCodec} from '../codec.js';
 import {Deferred} from '../deferred.js';
-import {AggregateError, AppError} from '../errors.js';
+import {AggregateError} from '../errors.js';
 import {toStream} from '../stream.js';
 import {assert, whenAll} from '../utils.js';
 import {decodeIndexKey, encodeIndexKey} from './data-index.js';

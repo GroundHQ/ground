@@ -1,5 +1,5 @@
+import {AppError} from '../app-error.js';
 import {Codec} from '../codec.js';
-import {AppError} from '../errors.js';
 import {log} from '../logger.js';
 import {Observer, Subject} from '../subject.js';
 import {Nothing, Unsubscribe} from '../utils.js';

@@ -1,8 +1,8 @@
 import createTree, {Iterator, Tree} from 'functional-red-black-tree';
+import {AppError} from '../app-error.js';
 import {encodeMsgpack} from '../codec.js';
 import {TXN_RETRIES_COUNT} from '../constants.js';
 import {context} from '../context.js';
-import {AppError} from '../errors.js';
 import {toStream} from '../stream.js';
 import {compareUint8Array, unreachable, zip} from '../utils.js';
 import {

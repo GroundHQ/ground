@@ -1,6 +1,6 @@
 import {describe, expect, it} from 'vitest';
+import {AppError} from './app-error.js';
 import {MAX_LOOKAHEAD_COUNT} from './constants.js';
-import {AppError} from './errors.js';
 import {Stream, toStream} from './stream.js';
 
 describe('Stream', () => {

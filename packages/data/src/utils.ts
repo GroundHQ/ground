@@ -1,11 +1,11 @@
 import {z} from 'zod';
+import {AppError} from './app-error.js';
 import {CancelBehavior, context} from './context.js';
 import {Deferred} from './deferred.js';
 import {
     AggregateBusinessError,
     AggregateCancelledError,
     AggregateError,
-    AppError,
     BusinessError,
     CancelledError,
     toError,

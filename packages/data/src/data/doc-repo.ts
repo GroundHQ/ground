@@ -1,4 +1,5 @@
 import {z, ZodType} from 'zod';
+import {AppError} from '../app-error.js';
 import {
     Crdt,
     CrdtCodec,
@@ -6,7 +7,6 @@ import {
     CrdtDiffString,
     stringifyCrdtDiff,
 } from '../crdt/crdt.js';
-import {AppError} from '../errors.js';
 import {
     compareIndexKey,
     createIndex,

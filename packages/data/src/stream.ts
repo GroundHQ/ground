@@ -1,8 +1,9 @@
 import {Channel as AsyncChannel} from 'async-channel';
 import {merge, of} from 'ix/Ix.asynciterable';
+import {AppError} from './app-error.js';
 import {MAX_LOOKAHEAD_COUNT} from './constants.js';
 import {Cursor, toCursor} from './cursor.js';
-import {AppError, CancelledError, toError} from './errors.js';
+import {CancelledError, toError} from './errors.js';
 import {log} from './logger.js';
 import {assert, Nothing, stringify, Unsubscribe, whenAll} from './utils.js';
 

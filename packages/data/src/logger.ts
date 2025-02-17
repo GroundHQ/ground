@@ -1,6 +1,7 @@
 import {pino as createPino, Level} from 'pino';
+import {AppError} from './app-error.js';
 import {context, flattenAttributeMap, NestedAttributeMap} from './context.js';
-import {AppError, toError} from './errors.js';
+import {toError} from './errors.js';
 
 export type LogLevel =
     | 'trace'

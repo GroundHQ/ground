@@ -1,9 +1,9 @@
 import {Tracer} from '@opentelemetry/api';
+import {AppError} from '../app-error.js';
 import {RPC_CALL_TIMEOUT_MS} from '../constants.js';
 import {Cancel, Context, context} from '../context.js';
 import {Deferred} from '../deferred.js';
 import {
-    AppError,
     BusinessError,
     CancelledError,
     ErrorCode,

@@ -24,8 +24,8 @@
         "strictNullChecks": true,
         "module": "NodeNext",
         "moduleResolution": "nodenext",
-        "lib": ["ES2020"],
-        "target": "ES2016" // we must use target before ES2017 because zone.js doesn't support native async / await
+        "lib": ["ESNext"],
+        "target": "ESNext" // we must use target before ES2017 because zone.js doesn't support native async / await
         // "noPropertyAccessFromIndexSignature": true,
         // "noUncheckedIndexedAccess": true
     },
